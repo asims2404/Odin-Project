@@ -14,74 +14,131 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Odin project - Landing Page</title>
   </head>
-  <body>
-    <a href="#main">Skip Navigation</a>
-    <header class="header">
-      <span class="h-logo">Header Logo</span>
-      <nav class="h-nav">
-        <ul class="h-nav-list">
-          <li class="h-nav-link">Header Link 1</li>
-          <li class="h-nav-link">Header Link 2</li>
-          <li class="h-nav-link">Header Link 3</li>
-        </ul>
-      </nav>
-    </header>
-    <main id="main" class="container">
-      <section class="hero">
-        <div class="hero-left">
-          <h1 class="hero-left-header">This website is awesome</h1>
-          <p class="hero-left-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            necessitatibus deleniti odio ea fugiat repudiandae?
-          </p>
-          <button class="button">Sign up</button>
-        </div>
-        <img src="./images/hero-image.jpg" alt="" class="hero-right-image" />
-      </section>
 
-      <section class="info">
-        <h2 class="info-title">Some Random information.</h2>
-        <section class="info-cards">
-          <section class="info-card">
-            <img src="./images/image-1.jpg" alt="" />
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </section>
-          <section class="info-card">
-            <img src="./images/image-2.jpg" alt="" />
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </section>
-          <section class="info-card">
-            <img src="./images/image-3.jpg" alt="" />
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </section>
-          <section class="info-card">
-            <img src="./images/image-4.jpg" alt="" />
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <body>
+    <header class="bg-900">
+      <section class="header container">
+        <h2 class="logo">Header Logo</h2>
+        <nav>
+          <ul>
+            <li><a href="#">header link one</a></li>
+            <li><a href="#">header link two</a></li>
+            <li><a href="#">header link three</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <div class="bg-900">
+        <section class="hero container">
+          <div>
+            <h1 class="hero-title">This website is awesome</h1>
+            <p class="hero-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque soluta explicabo voluptatum, saepe asperiores animi.
+            </p>
+            <button class="btn">Sign up</button>
+          </div>
+          <div>
+            <img
+              src="./images/hero-image.jpg"
+              alt="mountain range at night, lots of stars"
+            />
+          </div>
+        </section>
+      </div>
+
+      <div class="bg-100">
+        <section class="info container">
+          <h2 class="info-heading">Some Random information.</h2>
+          <section class="info-cards">
+            <section class="info-card">
+              <div class="info-card-img">
+                <img
+                  src="./images/image-1.jpg"
+                  alt="snow on mountains with a forrest in the foreground"
+                />
+              </div>
+              <p class="info-card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Fugiat, quidem.
+              </p>
+            </section>
+            <section class="info-card">
+              <div class="info-card-img">
+                <img
+                  src="./images/image-2.jpg"
+                  alt="snow mountain resort near the lake"
+                />
+              </div>
+              <p class="info-card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Fugiat, quidem.
+              </p>
+            </section>
+            <section class="info-card">
+              <div class="info-card-img">
+                <img
+                  src="./images/image-3.jpg"
+                  alt="snow mountain with aurore boréales in the sky"
+                />
+              </div>
+              <p class="info-card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Fugiat, quidem.
+              </p>
+            </section>
+            <section class="info-card">
+              <div class="info-card-img">
+                <img
+                  src="./images/image-4.jpg"
+                  alt="snow mountain peak on a cloudy night"
+                />
+              </div>
+              <p class="info-card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Fugiat, quidem.
+              </p>
+            </section>
           </section>
         </section>
-      </section>
+      </div>
 
-      <section class="testimonial">
-        <blockquote class="quote-box">
-          <p class="quote-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-            fugit aliquam iste, sed nemo et quaerat nesciunt adipisci ipsum
-            illo.
-          </p>
-          <figcaption class="quote-author">-Thor, God of Thunder</figcaption>
-        </blockquote>
-      </section>
+      <div class="bg-400">
+        <section class="testimonial container">
+          <div class="container">
+            <blockquote class="quote-box">
+              <p class="quote-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda fugit aliquam iste, sed nemo et quaerat nesciunt
+                adipisci ipsum illo.
+              </p>
+              <figcaption class="quote-author">
+                -Thor, God of Thunder
+              </figcaption>
+            </blockquote>
+          </div>
+        </section>
+      </div>
 
-      <section class="cta">
-        <div class="cta-left">
-          <h3>Call to action! it's time!</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa.</p>
-        </div>
-        <div class="cta-right">
-          <button class="button cta-button">Sign up</button>
-        </div>
-      </section>
+      <div class="bg-light">
+        <section class="cta container bg-accent">
+          <div class="cta-left">
+            <h3>Call to action! it's time!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="cta-right">
+            <button class="btn btn--cta">Sign up</button>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer class="footer">Copyright &copy; The Odin Project 2021</footer>
+
+    <footer class="bg-900">
+      <section class="footer container">
+        <p>Copyright &copy; The Odin Project 2021</p>
+      </section>
+    </footer>
   </body>
 </html>
