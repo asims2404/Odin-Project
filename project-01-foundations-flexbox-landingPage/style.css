@@ -1,3 +1,283 @@
-h1 {
-  color: red;
+:root {
+  --bg-900: #1f2937;
+  --bg-400: #e5e7eb;
+  --bg-100: #fff;
+  --bg-accent: #3882f6;
+
+  --fz-900: 3rem;
+  --fz-400: 2.25rem;
+  --fz-200: 1.5rem;
+  --fz-100: 1.15rem;
+
+  --fc-900: #1f2937;
+  --fc-400: #e5e7eb;
+  --fc-100: #f9faf8;
+
+  --ff-text: "Roboto", sans-serif;
+  --ff-head: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* 
+  Content
+    1_typography
+    2_background_styles
+    3_general_styles
+*/
+
+/*==========
+
+1_typography
+
+============*/
+
+body {
+  font-family: var(--ff-text);
+}
+
+/* head */
+.header-logo {
+  font-size: var(--fz-200);
+  color: var(--fc-400);
+}
+
+.header-nav a:link,
+.header-nav a:visited {
+  font-size: var(--fz-100);
+  color: var(--fc-400);
+}
+
+/* hero */
+.hero-title {
+  font-size: var(--fz-900);
+  font-weight: 900;
+  color: var(--fc-100);
+}
+
+.hero-text {
+  font-size: var(--fz-100);
+  color: var(--fc-400);
+}
+
+/* info */
+
+.info-heading {
+  font-size: var(--fz-400);
+  font-weight: 900;
+  color: var(--fc-900);
+}
+
+/* testimonial */
+.testimonial .quote-text {
+  font-size: var(--fz-400);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--bg-900);
+}
+
+/*==========
+
+2_background_styles
+
+============*/
+
+.bg-dark {
+  background-color: var(--bg-900);
+}
+
+.bg-normal {
+  background-color: var(--bg-400);
+}
+
+.bg-light {
+  background-color: var(--bg-100);
+}
+
+.btn {
+  background-color: var(--bg-accent);
+}
+
+/*==========
+
+3_general_styles
+
+============*/
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  border: none;
+  background-color: var(--bg-accent);
+  color: var(--fc-400);
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.btn:hover {
+  color: var(--bg-accent);
+  background-color: var(--fc-400);
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translateY(0.5px);
+}
+
+/* header */
+
+.header {
+  padding-top: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.header-nav li + li {
+  margin-left: 1rem;
+}
+
+.header-nav a:hover {
+  text-decoration: underline 1px solid white;
+}
+
+/* hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 30rem;
+}
+
+.hero div {
+  flex-basis: 100%;
+}
+
+.hero-title {
+  line-height: 1;
+}
+
+.hero-text,
+.hero-title {
+  margin-bottom: 0.75rem;
+}
+
+.hero-image {
+  text-align: end;
+}
+
+.hero-image img {
+  margin-left: auto;
+  min-width: 250px;
+}
+
+/* info */
+
+.info {
+  padding-bottom: 6rem;
+}
+
+.info-heading {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-cards .info-card + .info-card {
+  margin-left: 10px;
+}
+
+.info-card {
+  /*  border: 1px solid red; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.info-card-img {
+  border: #3882f6 solid 5px;
+  border-radius: 8px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.info-card-img img {
+  height: 100%;
+  width: 100%;
+}
+
+/* testimonial */
+.testimonial {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-author {
+  text-align: end;
+  font-weight: bold;
+}
+
+/* CTA */
+.cta {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  padding: 3rem 6rem;
+  background-color: var(--bg-accent);
+  color: var(--bg-400);
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--bg-accent);
+  border-radius: 6px;
+}
+
+.btn--cta {
+  border: 2px solid var(--bg-400);
+  border-radius: 5px;
+}
+
+/* footer */
+
+.footer {
+  text-align: center;
+  color: var(--bg-400);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
